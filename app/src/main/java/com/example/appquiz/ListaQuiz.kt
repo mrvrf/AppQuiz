@@ -15,6 +15,7 @@ class ListaQuiz : AppCompatActivity() {
     private lateinit var btnComida: Button
     private lateinit var btnMatematica: Button
     private lateinit var btnSocial: Button
+    private lateinit var btnRanking: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +32,7 @@ class ListaQuiz : AppCompatActivity() {
         btnComida = findViewById(R.id.btnComida)
         btnMatematica = findViewById(R.id.btnMatematica)
         btnSocial = findViewById(R.id.btnSocial)
+        btnRanking = findViewById(R.id.btnRanking)
 
         btnAnimais.setOnClickListener {
             startQuizActivity(1)
@@ -46,6 +48,11 @@ class ListaQuiz : AppCompatActivity() {
         }
         btnSocial.setOnClickListener {
             startQuizActivity(5)
+        }
+
+        btnRanking.setOnClickListener {
+            val intent = Intent(this, Ranking::class.java)
+            startActivity(intent)
         }
 
     }

@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvTituloCad"
+        android:id="@+id/tvTituloLog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -30,7 +30,7 @@
         android:text="Cadastrar-se"
         android:textColor="@color/white"
         android:backgroundTint="@color/colorPrimary"
-        app:layout_constraintTop_toBottomOf="@id/tvTituloCad"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloLog"
         app:layout_constraintEnd_toStartOf="@id/btnLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnLoginN"
@@ -43,7 +43,7 @@
         android:text="Login"
         android:textColor="@color/white"
         android:backgroundTint="@color/colorAccent"
-        app:layout_constraintTop_toBottomOf="@id/tvTituloCad"
+        app:layout_constraintTop_toBottomOf="@id/tvTituloLog"
         app:layout_constraintStart_toEndOf="@id/btnRegistro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/btnLoginN"
